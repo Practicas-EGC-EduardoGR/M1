@@ -8,6 +8,17 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	String frase = generarFrase();
+    	
+        System.out.println(frase);
+    }
+    
+    
+    private static String generarFrase(){
+    	String res;
+    	
+    	res = "Hola mundo!";
+    	
+    	return res;
     }
 }
