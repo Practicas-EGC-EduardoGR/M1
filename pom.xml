@@ -21,12 +21,30 @@
     <!-- To define the plugin version in your parent POM -->
     <pluginManagement>
       <plugins>
+	  
         <plugin>
-		
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.10.4</version>
         </plugin>
+		
+		<plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-pdf-plugin</artifactId>
+		  <executions>
+			<execution>
+			  <id>pdf</id>
+			  <phase>site</phase>
+			  <goals>
+				<goal>pdf</goal>
+			  </goals>
+			  <configuration>
+				<outputDirectory>${project.reporting.outputDirectory}</outputDirectory>
+				<includeReports>false</includeReports>
+			  </configuration>
+			</execution>
+		  </executions>
+		</plugin>
 		
       </plugins>
     </pluginManagement>
