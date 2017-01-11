@@ -14,7 +14,7 @@ public class App
     }
     
     
-    private static String generarFrase(){
+    public static String generarFrase(){
     	String res;
     	
     	res = "Hola mundo!";

@@ -2,3 +2,7 @@
 /bin/*
 .gitignore
 .project
+/target/classes/
+/target/javadoc-bundle-options/
+/target/test-classes/
+
