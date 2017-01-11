@@ -7,6 +7,7 @@
   <version>1.0</version>
   <name>M1</name>
   <url>http://maven.apache.org</url>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,4 +16,33 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <build>
+    <!-- To define the plugin version in your parent POM -->
+    <pluginManagement>
+      <plugins>
+        <plugin>
+		
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.10.4</version>
+        </plugin>
+		
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <!-- To use the report goals in your POM or parent POM -->
+  <reporting>
+    <plugins>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.10.4</version>
+      </plugin>
+
+    </plugins>
+  </reporting>
+  
 </project>
